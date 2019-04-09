@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/tlo_menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <EditText
+                android:id="@+id/editNameForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#bbcccccc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-light"
+                android:hint="Login"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#A0192133"
+                android:maxLength="40"/>
+
+
+            <EditText
+                android:id="@+id/editEmailForgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#bbcccccc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-light"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#A0192133"
+                android:textSize="34sp"
+                android:maxLength="45"/>
+
+            <Button
+                android:id="@+id/btnRemind"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wygeneruj nowe hasło"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

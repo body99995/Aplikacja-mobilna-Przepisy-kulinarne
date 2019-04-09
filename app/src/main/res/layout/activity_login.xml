@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/tlo_menu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:id="@+id/linearLayout">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#bbcccccc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-light"
+                android:hint="Login"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#A0192133"
+                android:maxLength="40"/>
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#bbcccccc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-light"
+                android:hint="Hasło"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#A0192133"
+                android:maxLength="40"
+                />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#bbcccccc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-light"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#A0192133"
+                android:textSize="34sp"
+                android:visibility="gone"
+                android:maxLength="45"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxRememberMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#bbcccccc"
+                android:text="Zapamiętaj mnie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnSignIn"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ZALOGUJ SIĘ"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REJESTRACJA"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLostPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#bbcccccc"
+                android:fontFamily="sans-serif-light"
+                android:text="Zapomniałeś hasła?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColorHint="#A0192133"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

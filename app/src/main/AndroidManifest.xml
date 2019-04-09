@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rafa.przepisykulinarne">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/food_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/food_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Recipe1Activity" />
+        <activity android:name=".Recipe2DetailsActivity" />
+        <activity android:name=".OpinionsActivity" />
+        <activity android:name=".ComponentsSearchActivity" />
+        <activity android:name=".ForgotPassActivity" />
+        <activity android:name=".NameSearchActivity" />
+        <activity android:name=".ChangePassActivity"></activity>
+    </application>
+
+</manifest>

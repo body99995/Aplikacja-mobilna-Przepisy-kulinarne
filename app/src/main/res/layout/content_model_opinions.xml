@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="android.support.widget.AppBarLayout.ScrollingViewBehavior"
+    tools:context="com.example.rafa.przepisykulinarne.OpinionsActivity"
+    tools:showIn="@layout/model_opinions">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:contentPaddingRight="10dp"
+            app:contentPaddingLeft="10dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--
+                <TextView
+                    android:id="@+id/average"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Średnia ocen:"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/starOpinionsAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:isIndicator="true"
+                    />
+                    -->
+
+                <EditText
+                    android:id="@+id/yourOpinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Dodaj swoją opinię"
+                    android:inputType="textMultiLine"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnOpinion"
+                    style="@android:style/Widget.Holo.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wyślij"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <ListView
+            android:id="@+id/lvOpinions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        </LinearLayout>
+    <!--<ListView
+        android:id="@+id/lvOpinions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />-->
+
+</RelativeLayout>

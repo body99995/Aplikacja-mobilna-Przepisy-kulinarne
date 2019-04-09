@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/tlo_menu2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:id="@+id/linearLayout">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaffffff"
+                android:text="Wpisz do 5 składników:"
+                android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/etSkl1"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wpisz składnik"
+                android:inputType="textPersonName"
+                android:textColorHint="#aaffffff"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/etSkl2"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wpisz składnik"
+                android:inputType="textPersonName"
+                android:textColorHint="#aaffffff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etSkl3"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wpisz składnik"
+                android:inputType="textPersonName"
+                android:textColorHint="#aaffffff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etSkl4"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wpisz składnik"
+                android:inputType="textPersonName"
+                android:textColorHint="#aaffffff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etSkl5"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wpisz składnik"
+                android:inputType="textPersonName"
+                android:textColorHint="#aaffffff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnDodajSkladnik"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#9f449200"
+                android:text="Dodaj składnik"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnUsunSkladnik"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="#9fff2200"
+                android:text="Usuń składnik"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSzukaj2"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Przepisy pasującego do wszystkich wymienionych składników"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSzukaj"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przepisy pasujące do co najmniej jednego ze składników"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
